@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import Home from "./screens/Home";
 
 const App = () => {
+  console.log("hello");
   return (
     <div className="App">
       <Home />
