@@ -6,6 +6,8 @@ import Home from "./screens/Home";
 
 const App = () => {
   console.log("hello");
+
+  console.log("new");
   return (
     <div className="App">
       <Home />
