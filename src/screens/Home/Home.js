@@ -1,9 +1,21 @@
 import { Col, Row } from "antd";
 import React, { useState, useEffect } from "react";
-import Button from "../components/Button";
+import Button from "../../components/Button";
+import { useSelector } from "react-redux";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
+
+  const state = useSelector((state) => state);
+
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    city: "",
+    category: "",
+  });
+
+  console.log("state ", state);
 
   useEffect(() => {
     clickHandler();
